@@ -1,0 +1,59 @@
+@function vw($px){
+    @return ($px / 750) * 100vw;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+// body{
+//     background: #f8f8f8;
+// }
+h1{
+    display: block;
+}
+.list{
+    width: vw(750);
+    height: vw(1150);
+    // background: yellow;
+    display: flex;
+    .left{
+        width: vw(136);
+        overflow: auto;
+        a{
+            
+            display: block;
+            width: 100%;
+            height: vw(130);
+            line-height: vw(130);
+            text-decoration: none;
+            color: #000;
+            border-bottom: #f8f8f8 solid 2px;
+            background: #fff;
+        }
+        .active{
+            // color: #ff6600;
+            background: #f8f8f8;
+        }
+    }
+    .right{
+        flex: 1;
+        height: vw(1100);
+        // background: olivedrab;
+        margin: 10px;
+        float: right;
+        overflow: auto;
+        ul{
+            li{
+                width: vw(177);
+                height: vw(172);
+                // background: orange;
+                float: left;
+                margin: 3px;
+                img{
+                    width: vw(110);
+                    height: vw(110);
+                }
+            }
+        }
+    }
+}

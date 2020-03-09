@@ -1,0 +1,61 @@
+@function vw($px){
+    @return ($px / 750) * 100vw;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.topLogo{
+    width: vw(750);
+    height: vw(232);
+    background-image: url(https://static.yiwugou.com/assets/k_beijing.png);
+    background-size: vw(750) vw(232);
+    padding: 20px;
+    .left{
+        width: vw(140);
+        height: vw(140);
+        border-radius: 50%;
+        overflow: hidden;
+        float: left;
+        box-shadow: 0 0 10px #fefefe;
+        img{
+            width: vw(140);
+            height: vw(140);
+            
+        }
+    }
+    .right{
+        float: left;
+        padding: 10px;
+        text-align: left;
+        color: #fff;
+    }
+}
+.sortBox{
+    width: vw(750);
+    height: vw(400);
+}
+.btnBox{
+    width: vw(750);
+    height: vw(100);
+    padding: 0 20px;
+}
+.btn{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 14px;
+    padding-right: 14px;
+    box-sizing: border-box;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    line-height: 2.55555556;
+    border-radius: 5px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    overflow: hidden;
+    background-color: #f60;
+    margin-bottom: 10px;
+}

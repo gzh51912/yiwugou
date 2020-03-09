@@ -1,0 +1,58 @@
+@function vw($px){
+    @return ($px / 750) * 100vw;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+}
+.price{
+    color: #f60;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: left;
+    padding: 0 10px;
+}
+.extra-con{
+    text-align: left;
+    padding: 0 10px;
+}
+.shop-con{
+    width: vw(750);
+    height: vw(140);
+    padding: 10px;
+    .left{
+        float: left;
+        img{
+            width: vw(100);
+            height: vw(100);
+        }
+    }
+    .right{
+        float: left;
+        text-align: left;
+        padding: 2px;
+        .shop-name{
+            color: #333333;
+        }
+    }
+}
+.back{
+    width: vw(60);
+    height: vw(60);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 222;
+    text-align: center;
+    line-height: vw(60);
+    border-radius: 50%;
+    background: rgba($color: #c7c4c4, $alpha: 0.5);
+
+}
